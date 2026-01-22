@@ -1,1 +1,7 @@
 
+body { margin: 25 vh auto;
+    padding: 1 em;
+    text-align: center;
+    width: 75 %;
+    min-width: 300 px; 
+     }
