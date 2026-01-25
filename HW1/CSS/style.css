@@ -1,13 +1,8 @@
-  body { margin: 25 vh auto;
-    padding: 1 em;
-    text-align: center;
-    width: 75 %;
-    min-width: 300 px; 
-     }
 
 body {
     font-family: Lato;
     background-color: blue;
+    text-align: center;
     color: white;
     scroll-behavior: smooth;
     margin-top: 100 px;
