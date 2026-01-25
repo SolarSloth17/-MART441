@@ -1,5 +1,23 @@
-head {
+head {   
+    font-family: Lato;
+    background-color: blue;
+    text-align: center;
+    color: white;
 }
+
+h1 {  
+    font-family: Lato;
+    background-color: blue;
+    text-align: center;
+    color: white;
+}
+
+h2 {   
+    font-family: Lato;
+    background-color: blue;
+    text-align: center;
+    color: white;
+   }
 
 body {
     font-family: Lato;
