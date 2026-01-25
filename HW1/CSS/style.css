@@ -1,28 +1,43 @@
-body { margin: 25 vh auto;
+  body { margin: 25 vh auto;
     padding: 1 em;
     text-align: center;
     width: 75 %;
     min-width: 300 px; 
      }
 
-
 body {
     font-family: Lato;
     background-color: blue;
     color: white;
     scroll-behavior: smooth;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-top: 100 px;
+    margin-bottom: 100 px;
+    margin-left: 100 px;
+    margin-right: 100 px;
     padding: 0;
     position: relative;
 }
 
 .navigation {
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 300 px;
+    margin-right: 300 px;
     background-color: blue;
     color: white;
 
 }
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 4 em;
+
+}
+
+.site-title {
+    background-color: blue;
+    color: white;
+
+    margin-left: 300 px;
+    margin-right: 300 px;
+    text-align: center;
+}               
