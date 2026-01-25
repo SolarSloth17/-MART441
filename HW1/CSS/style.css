@@ -12,27 +12,4 @@ body {
     padding: 0;
     position: relative;
 }
-
-.navigation {
-    margin-left: 300 px;
-    margin-right: 300 px;
-    background-color: blue;
-    color: white;
-
-}
-
-.navigation a {
-    text-decoration: none;
-    color: white;
-    font-size: 4 em;
-
-}
-
-.site-title {
-    background-color: blue;
-    color: white;
-
-    margin-left: 300 px;
-    margin-right: 300 px;
-    text-align: center;
-}               
+          
