@@ -15,5 +15,5 @@ console.log ("Lin-Manuel Miranda – Best known for Broadway Hamilton and in the
 console.log ("J-pop group Snow Man – One of the most prominent J-pop groups")
 
 prompt("What is your favorite animal?")
-console.log ("")
-console.log ("")
+console.log ("My favorite animal is" + animal)
+
