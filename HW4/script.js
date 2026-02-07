@@ -2,27 +2,27 @@ function storyFunction(choice) {
     var answer1 = document.getElementById("choice1").innerHTML;
     var answer2 = document.getElementById("choice2").innerHTML;
     if (choice == 1 && answer1 == "Yes") {
-        document.getElementById("story").innerHTML = "Pugster continues into the park with confidence. Pugster meets another dog. What Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Meet others";
-        document.getElementById("choice2").innerHTML = "Walk alone";
+        document.getElementById("story").innerHTML = "You have made it to the top pf the mountain. Now you have to choose to go down the blue square or the black diamond.";
+        document.getElementById("choice1").innerHTML = "Blue square";
+        document.getElementById("choice2").innerHTML = "Black diamond";
     } else if (choice == 2 && answer2 == "No") {
-        document.getElementById("story").innerHTML = "Pugster starts to back out, but then something in the back of Pugster's mind says 'Wait!'";
-        document.getElementById("choice1").innerHTML = "Go ahead and be brave";
-        document.getElementById("choice2").innerHTML = "Scan the situation";
-    } else if (choice == 1 && answer1 == "Meet others") {
-        document.getElementById("story").innerHTML = "Pugster walks over to a group of dogs and says hello.  Pugster is trying to decide who is genuine or not.";
-        document.getElementById("choice1").innerHTML = "Evaluate all dogs";
-        document.getElementById("choice2").innerHTML = "Stay clear";
-    } else if (choice == 2 && answer2 == "Walk alone") {
-        document.getElementById("story").innerHTML = "Pugster starts to walk over to the dogs and then decides to go to the water instead.  Now what?'";
-        document.getElementById("choice1").innerHTML = "Go for a swim";
-        document.getElementById("choice2").innerHTML = "Get a drink";
-    } else if (choice == 1 && answer1 == "Go ahead and be brave") {
-        document.getElementById("story").innerHTML = "Pugster decides to go in even with hesitation to make new friends.  Will it work?'";
-        document.getElementById("choice1").innerHTML = "Yes it will work";
-        document.getElementById("choice2").innerHTML = "No it will not work";
-    } else if (choice == 2 && answer2 == "Scan the situation") {
-        document.getElementById("story").innerHTML = "Pugster decides to just look around for the moment. What should Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Watch from afar";
-        document.getElementById("choice2").innerHTML = "Get in closer";
+        document.getElementById("story").innerHTML = "You can't hold back the line which means you have to go back of the line'";
+        document.getElementById("choice1").innerHTML = "You decided to chicken out and went to find a place to wait for your friends";
+        document.getElementById("choice2").innerHTML = "You decided to do something else";
+    } else if (choice == 1 && answer1 == "Blue square") {
+        document.getElementById("story").innerHTML = "You went down the path of blue square.";
+        document.getElementById("choice1").innerHTML = "You were able to got to the bottom with no problem";
+        document.getElementById("choice2").innerHTML = "You made to the bottom but you fall down many times before reaching the bottom";
+    } else if (choice == 2 && answer2 == "Black diamond") {
+        document.getElementById("story").innerHTML = "You decieded to just your luck and went down the path of black diamond.";
+        document.getElementById("choice1").innerHTML = "You couldn't get to the bottom because you were fatal injured on the way down";
+        document.getElementById("choice2").innerHTML = "You were able to get down the bottom however there were few ";
+    } else if (choice == 1 && answer1 == "You decided to chicken out and went to find a place to wait for your friends") {
+        document.getElementById("story").innerHTML = "While waiting for your friends to be finish, what will you do?'";
+        document.getElementById("choice1").innerHTML = "you go looking for food";
+        document.getElementById("choice2").innerHTML = "go on your phone";
+    } else if (choice == 2 && answer2 == "You decided to do something els") {
+        document.getElementById("story").innerHTML = "There is two other activity to do. One is snow tubing, and the other is dog sledding. What will you pick?";
+        document.getElementById("choice1").innerHTML = "Dog shledding";
+        document.getElementById("choice2").innerHTML = "Snow tubing";
     }
