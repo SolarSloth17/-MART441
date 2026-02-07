@@ -60,7 +60,7 @@ function storyFunction(choice) {
         document.getElementById("choice1").innerHTML = "Yes restart";
         document.getElementById("choice2").innerHTML = "No quit";
     } else if (choice == 1 && answer1 == "Yes restart") {
-        document.getElementById("story").innerHTML = "Our fearless leader, 'Pugster' has entered the dog park for the first time. Scared? Yes, but willing to give it a try. Are you ready to start on adventure with Pugster?";
+        document.getElementById("story").innerHTML = "You are at a ski resort with a few friends, waiting in line for the lift. Are you ready to get on the lift?";
         document.getElementById("choice1").innerHTML = "Yes";
         document.getElementById("choice2").innerHTML = "No";
     } else if (choice == 2 && answer2 == "No quit") {
