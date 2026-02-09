@@ -65,5 +65,5 @@ function storyFunction(choice) {
         document.getElementById("choice2").innerHTML = "No";
     } else if (choice == 2 && answer2 == "No quit") {
         document.getElementById("story").innerHTML = "You had fun not matter the outcome and is thinking about the next skiing trip.";
-    j
+
     
