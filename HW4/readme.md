@@ -5,3 +5,6 @@ There wasn’t much I liked about it. If anything, I was confused because it was
 
 What didn’t you like? 
 I didn’t like most of what Gemini created. It was missing DOM. Most of the coding was in index.html.  
+
+Discussing your successes, challenges, and how you overcame them.
+The most challenging part was coming up with a story. I looked up different types of adventures and picked one. Everything else was successful for me. 
