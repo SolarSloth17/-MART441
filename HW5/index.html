@@ -65,6 +65,36 @@
                 myQuestion.innerHTML = "Please remember we are all in this together.";
             }
         }
+
+           function getChoice4()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "Thank you for your kindness!";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Please remember we are all in this together.";
+            }
+        }
+
+           function getChoice5()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "Thank you for your kindness!";
+            }
+            else if(answer === "no")
+            {
+                myQuestion.innerHTML = "Please remember we are all in this together.";
+            }
+        }
     </script>
   <body>
 
@@ -94,6 +124,19 @@
 
         <input type="text" size="30" id="choice5" value="Enter Home or Friend"  style="display:none">
         <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice6" value="Enter Cook or Takeout"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice7" value="Enter Romantic or Comedy"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+       <input type="text" size="30" id="choice8" value="Enter Phone or Game"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
+        <input type="text" size="30" id="choice9" value="Enter Sleep or All night long"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+
   </button>
     </body>
 
