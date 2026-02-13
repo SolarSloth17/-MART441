@@ -1,7 +1,7 @@
 <html>
    <style>
         body{
-            background-color: bisque;
+            background-color: lightblue;
         }
     </style>
     <script>
@@ -9,7 +9,7 @@
         {
             var myChoice = document.getElementById("choice").value;
             var myQuestion = document.getElementById("question");
-            if(myChoice === "Green")
+            if(myChoice === "Agree")
             {
                 document.getElementById("choice").style.display="none";
                 document.getElementById("btnSubmit").style.display="none";
@@ -18,16 +18,16 @@
                 document.getElementById("btnSubmit2").style.display="block";
                 
 
-                myQuestion.innerHTML = "Green is a great choice. Is the color of generosity. Would you be willing to give food to those in need?";
+                myQuestion.innerHTML = " Your friends are happy that you agree to go with them. Your friends can’t pick if they should get something to eat or watch a movie first. Which one would you pick? ";
             }
-            else if(myChoice === "Blue")
+            else if(myChoice === "Stay at home")
             {
                 document.getElementById("choice").style.display="none";
                 document.getElementById("btnSubmit").style.display="none";
                 
                 document.getElementById("choice3").style.display="block";
                 document.getElementById("btnSubmit3").style.display="block";
-                myQuestion.innerHTML = "Blue is the color of loyalty and sincerity.  Are you willing to show up and stand by those who need a friend?";
+                myQuestion.innerHTML = "You have a peaceful evening for yourself. You decided it was time to eat. Will you make up something from what you have at home or order takeout?";
 
             }
             else
@@ -73,11 +73,10 @@
         <img src="tree.jpeg" id="mainImage">
     <div id="question">
     <br>
-        It was a dark and lonely time in Bob's life. He was wandering aimlessly and wondering where to go.
+        Your friends invited you out for the evening. 
         <br>
-        He came upon a tree and it asked him what his favorite color was.
-        <br>
-        He had only two choices.  It was Green or Blue.
+       Will you agree with their invitation or stay home? 
+    
     </div>
        
         <br>
