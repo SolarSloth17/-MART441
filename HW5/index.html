@@ -25,7 +25,7 @@
                 document.getElementById("choice").style.display="none";
                 document.getElementById("btnSubmit").style.display="none";
                 
-                document.getElementById("choice3").style.display="block";
+                document.getElementById("choice6").style.display="block";
                 document.getElementById("btnSubmit3").style.display="block";
                 myQuestion.innerHTML = "You have a peaceful evening for yourself. You decided it was time to eat. Will you make up something from what you have at home or order takeout?";
 
@@ -95,6 +95,83 @@
                 myQuestion.innerHTML = "You are glad that you didn’t have go through the trouble of getting home by yourself.";
             }
         }
+
+       
+           function getChoice6()
+        {
+            var answer = document.getElementById("choice6").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Cook")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You decided to save some money and make something at home even though there is not much to have. You are stuffed from the food and are in the mood to watch a movie. You can’t pick between watching a romantic movie and a comedy movie. Which one will you pick? ";
+            }
+            else if(answer === "Takeout")
+            {
+                myQuestion.innerHTML = "You are very happy that you didn’t have to stress out figuring out what to have. You are stuffed from the food and are in the mood to watch a movie. You can’t pick between watching a romantic movie and a comedy movie. Which one will you pick?";
+            }
+        }
+
+           function getChoice7()
+        {
+            var answer = document.getElementById("choice7").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Romantic")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You are reminded of how single you are and wish you had someone to love. It is now late, and you can’t decide if you should go on your phone or play a game for a little while. What will you do? ";
+            }
+            else if(answer === "Comedy")
+            {
+                myQuestion.innerHTML = " The movie made you laugh and puts you in a good mood for the rest of the evening. It is now late, and you can’t decide if you should go on your phone or play a game for a little while. What will you do?";
+            }
+        }
+
+       
+           function getChoice8()
+        {
+            var answer = document.getElementById("choice8").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Phone")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You end up not going to bed until late because you kept scrolling through the social media feed. You wonder if you should go to sleep or stay up all night long.";
+            }
+            else if(answer === "Game")
+            {
+                myQuestion.innerHTML = "You were so invested in the game that you didn’t realize how late it was. You wonder if you should go to sleep or stay up all night long.";
+            }
+        }
+
+           function getChoice9()
+        {
+            var answer = document.getElementById("choice9").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Sleep")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You are happy that you didn’t stay up late. Do you want to restart or quit?";
+            }
+            else if(answer === "All night long")
+            {
+                myQuestion.innerHTML = "You had a great evening and wondering when is the next time your will get a evening off";
+            }
+        }
+
+            function getChoice10()
+        {
+            var answer = document.getElementById("choice10").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "Restart")
+            {
+                document.getElementById("mainImage").src = "together.jpg"
+                myQuestion.innerHTML = "You are happy that you didn’t stay up late. Do you want to restart or quit?";
+            }
+            else if(answer === "Quit")
+            {
+                myQuestion.innerHTML = "You regret not going to sleep and now have dark circles. Do you want to restart or quit?";
+            }
+        }
     </script>
   <body>
 
@@ -136,7 +213,9 @@
 
         <input type="text" size="30" id="choice9" value="Enter Sleep or All night long"  style="display:none">
         <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
-
+     
+       <input type="text" size="30" id="choice10" value="Enter Restart or Quit"  style="display:none">
+        <button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
   </button>
     </body>
 
