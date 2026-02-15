@@ -1,5 +1,4 @@
- <script>
-        function getChoice1()
+       function getChoice1()
         {
             var myChoice = document.getElementById("choice").value;
             var myQuestion = document.getElementById("question");
@@ -299,4 +298,3 @@
                 myQuestion.innerHTML = "Invalid answer";
             }
         }
-    </script>
