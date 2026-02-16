@@ -38,7 +38,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Eat")
             {
-                document.getElementById("mainImage").src = "grateful.jpg"
+           
 
                    document.getElementById("choice2").style.display="none";
                 document.getElementById("btnSubmit2").style.display="none";
@@ -73,7 +73,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Sing")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+                document.getElementById("mainImage").src = "karaoke.jpg"
                
                   document.getElementById("choice3").style.display="none";
                 document.getElementById("btnSubmit3").style.display="none";
@@ -104,7 +104,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Drunk")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+                document.getElementById("mainImage").src = "alcohol.jpg"
                
                     document.getElementById("choice4").style.display="none";
                 document.getElementById("btnSubmit4").style.display="none";
@@ -131,7 +131,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Home")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+              
                     
                 document.getElementById("choice5").style.display="none";
                 document.getElementById("btnSubmit5").style.display="none";
@@ -162,7 +162,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Cook")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+             
                
                   document.getElementById("choice6").style.display="none";
                 document.getElementById("btnSubmit6").style.display="none";
@@ -175,7 +175,8 @@
                
             else if(answer === "Takeout")
             {
-                  document.getElementById("choice6").style.display="none";
+              document.getElementById("mainImage").src = "takeout.jpg"
+              document.getElementById("choice6").style.display="none";
                 document.getElementById("btnSubmit6").style.display="none";
                
                document.getElementById("choice7").style.display="block";
@@ -194,7 +195,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Romantic")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+              
                
                  document.getElementById("choice7").style.display="none";
                 document.getElementById("btnSubmit7").style.display="none";
@@ -225,7 +226,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Phone")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+               
                
                 document.getElementById("choice8").style.display="none";
                 document.getElementById("btnSubmit8").style.display="none";
@@ -255,7 +256,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Sleep")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+               
                
                  document.getElementById("choice9").style.display="none";
                 document.getElementById("btnSubmit9").style.display="none";
@@ -286,7 +287,7 @@
             var myQuestion = document.getElementById("question");
             if(answer === "Restart")
             {
-                document.getElementById("mainImage").src = "together.jpg"
+                
                 myQuestion.innerHTML = "You are happy that you didn’t stay up late. Do you want to restart or quit?";
             }
             else if(answer === "Quit")
