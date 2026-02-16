@@ -1,4 +1,15 @@
-       function getChoice1()
+ caseSensitive(true);
+
+ function caseSensitive(letsKeepLooping) {
+
+      do{
+        console.log("Remember Answers are case sensitive");
+        letsKeepLooping++;
+      }
+       while(letsKeepLooping < 10);
+     }
+
+function getChoice1()
         {
             var myChoice = document.getElementById("choice").value;
             var myQuestion = document.getElementById("question");
