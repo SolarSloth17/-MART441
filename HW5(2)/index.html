@@ -4,19 +4,11 @@
      background-color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     align-content: center;
+    padding: 50px;
     }
 </style>
   <script>
- caseSensitive(true);
 
- function caseSensitive(letsKeepLooping) {
-
-      do{
-        console.log("Remember Answers are case sensitive");
-        letsKeepLooping++;
-      }
-       while(letsKeepLooping < 10);
-     }
 
 function getChoice1()
         {
@@ -319,6 +311,16 @@ function getChoice1()
                 myQuestion.innerHTML = "Invalid answer";
             }
         }
+         caseSensitive(true);
+
+ function caseSensitive(letsKeepLooping) {
+
+      do{
+        console.log("Remember Answers are case sensitive");
+        letsKeepLooping++;
+      }
+       while(letsKeepLooping < 10);
+     }
   </script> 
   <body>
          <link rel="stylesheet" href="style.css">
