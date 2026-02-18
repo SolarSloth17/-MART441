@@ -4,4 +4,4 @@ For this assignment, Gemini created something that followed the specific require
 
 This assignment was a big headache for me. I couldn't figure out what was wrong. One day, I somehow did something right that it worked somewhat; it did some of what was supposed to do on the site. The next day, I went back to square one, where most of the code didn’t work. Nothing I did was working on the site. It didn’t help that I had forgotten what I did the day before. It seemed like only the example that was given worked, and everything else didn’t. AI didn’t help me in any meaningful way. Maybe I just don’t know how to ask it the right questions, but AI does not seem to be helpful to my creativity. 
 
-The reason there are two index.html because the first one was not working, so I put everything in the second index.html.
+The reason there are two index.html because the first one was not working, so I put everything in the second index.html. Still nothing works for some odd reason.
