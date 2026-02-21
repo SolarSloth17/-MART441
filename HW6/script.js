@@ -13,6 +13,27 @@ function printBlanks()
         document.getElementById(imageTags[i]).src= blankImagePath;
     }
        
-    
+}
+
+
+function createRandomImageArray()
+{
+    var actualImagePath = ["images/dog.jpg", "images/tiger.jpeg"];
+    var count = [0,0];
+    while(actualImages.length < 4)
+    {
+        var randomNumber = Math.floor(Math.random() * actualImagePath.length)
+        if(count[randomNumber] < 2)
+        {
+            actualImages.push(actualImagePath[randomNumber]);
+            count[randomNumber] = count[randomNumber] + 1;
+        }
+    } 
+        
+}
+
+function flipImage(number)
+{
+    document.getElementById(imageTags[number]).src= actualImages[number];
     
 }
