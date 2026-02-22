@@ -1,6 +1,6 @@
 var imageTags = ["image1", "image2", "image3", "image4","image5","image6", "image7", "image8", "image9"];
 
-var blankImagePath = "images/gofish.jpg";
+var blankImagePath = "HW6/images/Little buddie.jpg";
 
 var actualImages = new Array();
 
@@ -18,7 +18,7 @@ function printBlanks()
 
 function createRandomImageArray()
 {
-    var actualImagePath = ["images/dog.jpg", "images/tiger.jpeg"];
+    var actualImagePath = ["HW6/images/Zeus.jpg", "HW6/images/Daisy.jpg"];
     var count = [0,0];
     while(actualImages.length < 9)
     {
