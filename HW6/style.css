@@ -2,32 +2,18 @@ body{
     background-color:lightblue;
 }
 
-.divTable{
-	display: table;
-	width: 100%;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 250px); 
+    grid-template-rows: repeat(3, 250px); 
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 20px; 
 }
-.divTableRow {
-	display: table-row;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
-.divTableCell, .divTableHead {
-	border: 1px solid #999999;
-	display: table-cell;
-	padding: 3px 10px;
-}
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-	font-weight: bold;
-}
-.divTableFoot {
-	background-color: #EEE;
-	display: table-footer-group;
-	font-weight: bold;
-}
-.divTableBody {
-	display: table-row-group;
+
+.grid img {
+    width: 250px; 
+    height: 250px; 
+    cursor: pointer;
+    border: 2px solid #ccc; 
 }
