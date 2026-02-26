@@ -1,5 +1,5 @@
-var imageNames = ["image1", "image2", "image3", "image4","image5","image6", "image7", "image8", "image9"];
-var blankImagePath = "images/gofish.jpg";
+var imageNames = ["image1", "image2", "image3", "image4","image5","image6", "image7", "image8"];
+var blankImagePath = "images/Daisy.jpg";
 var firstNumber = -1;
 var secondNumber = -1;
 var score = 0;
@@ -24,7 +24,7 @@ function createRandomImageArray()
     while(actualImages.length < 9)
     {
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
-        if(count[randomNumber] < 2)
+        if(count[randomNumber] < 3)
         {
             actualImages.push(actualImagePath[randomNumber]);
             count[randomNumber] = count[randomNumber] + 1;
