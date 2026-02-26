@@ -1,4 +1,4 @@
-var imageNames = ["image1", "image2", "image3", "image4"];
+var imageNames = ["image1", "image2", "image3", "image4","image5","image6", "image7", "image8", "image9"];
 var blankImagePath = "images/gofish.jpg";
 var firstNumber = -1;
 var secondNumber = -1;
@@ -21,7 +21,7 @@ function createRandomImageArray()
 {
     var actualImagePath = ["images/dog.jpg", "images/tiger.jpeg"];
     var count = [0,0];
-    while(actualImages.length < 4)
+    while(actualImages.length < 9)
     {
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
         if(count[randomNumber] < 2)
