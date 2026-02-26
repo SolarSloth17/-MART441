@@ -64,7 +64,7 @@ function flipImage(number)
         {  
             player.score = score;
             localStorage.setItem("playerInfo", JSON.stringify(player));
-            window.location = "HWExampleEnd.html";
+            window.location = "end.html";
         }
     }
 }
@@ -90,7 +90,7 @@ function addToPlayer()
     player.lastname = lastName;
     player.age = age;
     localStorage.setItem("playerInfo", JSON.stringify(player));
-    window.location = "HWExample.html";
+    window.location = "intro.html";
 }
 
 function playerInfo()
