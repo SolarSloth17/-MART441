@@ -5,16 +5,15 @@ var secondNumber = -1;
 var score = 0;
 var allFound = 0;
 var player = {"firstname":"", "lastname":"", "age":0, "score":0};
+var actualImages = [];
 
 function printBlanks()
 {
-
     createRandomImageArray();
     for(var i = 0; i < imageNames.length; i++)
     {
         document.getElementById(imageNames[i]).src= blankImagePath;
-    }
-         
+    }         
 }
 
 function createRandomImageArray()
