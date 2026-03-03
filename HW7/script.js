@@ -23,7 +23,7 @@ function createRandomImageArray()
                             "images/Little buddie.jpg", "images/Screenshot 2024-06-08 132807.png",
                             "images/Zeus.jpg", "images/horse.JPG"
     ];
-    var blankArray = new Array(12).fill(blankImage);
+    var blankArray = new Array(12). fill(blankImage);
     var imageArray = []; 
     var count = [0,0];
     while(actualImages.length < 8)
