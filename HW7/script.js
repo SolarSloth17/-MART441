@@ -18,12 +18,18 @@ function printBlanks()
 
 function createRandomImageArray()
 {
-    var actualImagePath = ["images/Daisy.jpg", "images/6014002.jpeg", "images/Jackson eating.jpg", "images/Little buddie.jpg";
+    var actualImagePath = ["images/Daisy.jpg", "images/6014002.jpeg",
+                           "images/Jackson eating.jpg", "images/Little buddie.jpg", 
+                            "images/Little buddie.jpg", "images/Screenshot 2024-06-08 132807.png",
+                            "images/Zeus.jpg", "images/horse.JPG"
+    ];
+    var blankArray = new Array(12).fill(blankImage);
+    var imageArray = []; 
     var count = [0,0];
-    while(actualImages.length < 9)
+    while(actualImages.length < 8)
     {
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
-        if(count[randomNumber] < 3)
+        if(count[randomNumber] < 4)
         {
             actualImages.push(actualImagePath[randomNumber]);
             count[randomNumber] = count[randomNumber] + 1;
