@@ -1,1 +1,2 @@
+Reflect
 I thought everything was going pretty well until I saw the grade for homework 6, even though I coded the way that the example showed. I had the same problems with this homework assignment. Other than that, the rest of the coding was acceptable, I think.  
