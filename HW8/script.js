@@ -17,3 +17,20 @@ class ViewFinder {
                 <p><strong>Year:</strong> ${this.imageYear}</p>`;
     }
 }
+
+const images = [
+    new ImageObject(}
+    new ImageObject(}
+    new ImageObject(}
+    new ImageObject(}
+    new ImageObject(}
+
+const imageElement = document.getElementById('image');
+const descriptionElement = document.getElementById('description');
+const switchButton = document.getElementById('switch-button');
+
+function accessInformation()
+{
+       var randomNumber = Math.floor(Math.random() * myViewFinderArray.length);
+      document.getElementById("title").innerHTML = myViewFinderArray[randomNumber].toString();
+]
