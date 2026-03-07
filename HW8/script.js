@@ -19,11 +19,21 @@ class ViewFinder {
 }
 
 const images = [
-    new ImageObject(}
-    new ImageObject(}
-    new ImageObject(}
-    new ImageObject(}
-    new ImageObject(}
+    new ImageObject(
+        '"CAPITOL CRAWL"'. './images/ ", 'Tom Olin', '1990'
+        },
+    new ImageObject(
+        '"Hate Is A Virus"'. './images/ ", 'Anna Rogacheva', '2021'
+        },
+    new ImageObject(
+        '"I.C.E. Out of Minneapolis"'. './images/ ", ' Burlesque Of North America', '2026'
+        },
+    new ImageObject(
+        '"Untitle"'. './images/ ", 'Gustav Dejert', '2016'
+        },
+    new ImageObject(
+        '"Climate Change Data "'. './images/ ", 'Jill Pelto', '2015'
+        },
 
 const imageElement = document.getElementById('image');
 const descriptionElement = document.getElementById('description');
