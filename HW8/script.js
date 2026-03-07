@@ -20,19 +20,19 @@ class ViewFinder {
 
 const images = [
     new ImageObject(
-        '"CAPITOL CRAWL"'. './images/ ", 'Tom Olin', '1990'
+        '"CAPITOL CRAWL"'. "./images/rawl_th.jpg ", 'Tom Olin', '1990'
         },
     new ImageObject(
-        '"Hate Is A Virus"'. './images/ ", 'Anna Rogacheva', '2021'
+        '"Hate Is A Virus"'. "./images/Anna-Rogacheva.jpg ", 'Anna Rogacheva', '2021'
         },
     new ImageObject(
-        '"I.C.E. Out of Minneapolis"'. './images/ ", ' Burlesque Of North America', '2026'
+        '"I.C.E. Out of Minneapolis"'. "./images/ice out.jpg ", ' Burlesque Of North America', '2026'
         },
     new ImageObject(
-        '"Untitle"'. './images/ ", 'Gustav Dejert', '2016'
+        '"Untitle"'. "./images/pay gap.jpg", 'Gustav Dejert', '2016'
         },
     new ImageObject(
-        '"Climate Change Data "'. './images/ ", 'Jill Pelto', '2015'
+        '"Climate Change Data "'. "./images/climate change.jpg ", 'Jill Pelto', '2015'
         },
 
 const imageElement = document.getElementById('image');
