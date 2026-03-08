@@ -1,46 +1,74 @@
+
 var myViewFinderArray = new Array();
 
 class ViewFinder {
-    constructor(title, image, description, author, imageYear) {
+    constructor(title, image, description, author, Year) {
         this.title = title;
         this.image = image;
         this.description = description;
         this.author = author;
-        this.imageYear = imageYear;
+        this.Year = Year;
     }
 
-    toString() {
-        return `<h2>${this.title}</h2>
-                <img src='${this.image}' alt='${this.title}' width='300'>
-                <p><strong>Description:</strong> ${this.description}</p>
-                <p><strong>Author:</strong> ${this.author}</p>
-                <p><strong>Year:</strong> ${this.imageYear}</p>`;
+    toString() 
+     {
+        return "Title: " + this.title; 
+        return "Image: " + this.image;   
+        return "Description: " + this.description; 
+        return "Author: " + this.author; 
+        return "Year: " + this.Year; 
+    }
+   get theTitle()
+    {
+        return this.title;
+    }
+    get theImage()
+    {
+        return this.image;
+    }
+    get theDescription()
+    {
+        return this.description;
+    }   
+    get theAuthor()
+    {
+        return this.author;
+    }       
+    get theYear()   
+    {
+        return this.Year;
     }
 }
-
-const images = [
-    new ImageObject(
-        '"CAPITOL CRAWL"'. "./images/rawl_th.jpg ", 'Tom Olin', '1990'
-        },
-    new ImageObject(
-        '"Hate Is A Virus"'. "./images/Anna-Rogacheva.jpg ", 'Anna Rogacheva', '2021'
-        },
-    new ImageObject(
-        '"I.C.E. Out of Minneapolis"'. "./images/ice out.jpg ", ' Burlesque Of North America', '2026'
-        },
-    new ImageObject(
-        '"Untitle"'. "./images/pay gap.jpg", 'Gustav Dejert', '2016'
-        },
-    new ImageObject(
-        '"Climate Change Data "'. "./images/climate change.jpg ", 'Jill Pelto', '2015'
-        },
-
-const imageElement = document.getElementById('image');
-const descriptionElement = document.getElementById('description');
-const switchButton = document.getElementById('switch-button');
+function initializeArray()
+ {
+     myViewFinder = new ViewFinder(
+        '"CAPITOL CRAWL"', "./images/rawl_th.jpg ","disable people", "Tom Olin", "1990"
+     );
+   myViewFinder2 = new ViewFinder(
+        '"Hate Is A Virus"', "./images/Anna-Rogacheva.jpg ","artwork","Anna Rogacheva", "2021"
+   );
+   myViewFinder3 = new ViewFinder(
+        '"I.C.E. Out of Minneapolis"', "./images/ice out.jpg ","Done with ICE", "Burlesque Of North America", "2026"
+   );
+   myViewFinder4 = new ViewFinder(
+        '"Untitle"', "./images/pay gap.jpg", "paygap","Gustav Dejert", "2016"
+   );
+    myViewFinder5 = new ViewFinder(
+        '"Climate Change Data "', "./images/climate change.jpg ","climate problem", "Jill Pelto", "2015"
+    );
+        myViewFinderArray.push(myViewFinder);
+        myViewFinderArray.push(myViewFinder2);
+        myViewFinderArray.push(myViewFinder3);
+        myViewFinderArray.push(myViewFinder4);
+        myViewFinderArray.push(myViewFinder5);
+}       
 
 function accessInformation()
 {
        var randomNumber = Math.floor(Math.random() * myViewFinderArray.length);
       document.getElementById("title").innerHTML = myViewFinderArray[randomNumber].toString();
-]
+      document.getElementById("image").innerHTML = myViewFinderArray[randomNumber].image;
+      document.getElementById("description").innerHTML = myViewFinderArray[randomNumber].theDescription;
+      document.getElementById("author").innerHTML = myViewFinderArray[randomNumber].theAuthor;
+      document.getElementById("year").innerHTML = myViewFinderArray[randomNumber].theYear
+}
