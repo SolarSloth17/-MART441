@@ -4,7 +4,7 @@
       background: red;
       position: absolute;
       left: 0;
-      top: 400;
+      top: 500px;
     }
     #circle {
       width: 100px;
@@ -13,31 +13,41 @@
       border-radius: 50%;
       position: absolute;
       left: 0;
-      top: 500;
+      top: 600px;
     }
 
     #triangle {
       width: 0px;
       height: 0px;
-      background: #00ff26;
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
-      border-bottom: 50px solid black; /* T
+      border-bottom: 50px solid hwb(252 24% 13%);
       position: absolute;
       left: 0;
-      top: 600;
+      top: 600px;
+      display: none;
     }
 
     .stuff{
-      background: blue;
       color:white;
     }
 
     #third{
-      background: green;
       color:white;
+      display: none;
+      position: absolute;
     }
 
     body{
         background-color: burlywood;
     }
+
+ #sushi {
+    position: absolute;
+    display: none;
+  }
+
+  #riceballs {
+    position: absolute;
+    display: none;
+  }}
