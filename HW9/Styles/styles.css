@@ -1,7 +1,7 @@
    #square {
       width: 100px;
       height: 100px;
-      background: red;
+      background: #f200ff;
       position: absolute;
       left: 0;
       top: 500px;
@@ -30,16 +30,18 @@
 
     .stuff{
       color:white;
+      text-shadow: 1px 1px 2px black
     }
 
     #third{
       color:white;
       display: none;
       position: absolute;
+      text-shadow: 1px 1px 2px black
     }
 
     body{
-        background-color: burlywood;
+        background-color: #a376de;
     }
 
  #sushi {
@@ -50,4 +52,10 @@
   #riceballs {
     position: absolute;
     display: none;
-  }}
+  }
+
+  #delicious{
+    position: absolute;
+    display: none;
+  
+  }
