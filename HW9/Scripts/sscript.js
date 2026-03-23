@@ -38,11 +38,11 @@ function swapImage() {
             let randomY = Math.floor(Math.random() * 200);
             $("#mainImage").css({ left: randomX + "px", top: randomY + "px" });
 
-            $("#mainImage, #dishDescription").fadeIn(500, function() {
+            $("#mainImage, #dishDescription, #delicious").fadeIn(500, function() {
                 
                 $("#mainImage").animate({ left: "+=50px", top: "+=30px" }, 2000);
-                
-                $("#sushi").fadeIn(500).animate({ left: "+=200px" }, 5000, "linear");
+
+                $("#delicious").animate({ left: "+=200px" }, 1000, "linear");
             });
         }
     });
