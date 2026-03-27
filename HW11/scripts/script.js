@@ -6,14 +6,12 @@ let holiday = {
 
 $(function () {
     $("button").click(function () {
-        // This is looking for showHolidayInfo
         showHolidayInfo(); 
     });
 });
 
-// Rename this from showBikeInfo to showHolidayInfo
 function showHolidayInfo() {
-    $("#HolidayInformation").html(
+    $("#holidayInformation").html(
         "Name: " + holiday.name + 
         "<br>Date: " + holiday.date + 
         "<br>Type: " + holiday.type
