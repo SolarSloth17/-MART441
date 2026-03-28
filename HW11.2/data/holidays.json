@@ -1,1 +1,109 @@
-
+{
+  "holidays": [
+    {
+      "name": "New Year's Day",
+      "date": "January 1",
+      "type": "Federal",
+    },
+    {
+      "name": "Martin Luther King Jr. Day",
+      "date": "Third Monday of January",
+      "type": "Federal",
+    },
+    {
+      "name": "Presidents' Day",
+      "date": "Third Monday of February",
+      "type": "Federal",
+    },
+    {
+      "name": "Memorial Day",
+      "date": "Last Monday of May",
+      "type": "Federal",
+    },
+    {
+      "name": "Juneteenth",
+      "date": "June 19",
+      "type": "Federal",
+    },
+    {
+      "name": "Independence Day",
+      "date": "July 4",
+      "type": "Federal",
+    },
+    {
+      "name": "Labor Day",
+      "date": "First Monday of September",
+      "type": "Federal",
+    },
+    {
+      "name": "Columbus Day",
+      "date": "Second Monday of October",
+      "type": "Federal",
+    },
+    {
+      "name": "Veterans Day",
+      "date": "November 11",
+      "type": "Federal",
+    },
+    {
+      "name": "Thanksgiving Day",
+      "date": "Fourth Thursday of November",
+      "type": "Federal",
+    },
+    {
+      "name": "Christmas Day",
+      "date": "December 25",
+      "type": "Federal",
+    },
+    {
+      "name": "Valentine's Day",
+      "date": "February 14",
+      "type": "Observance",
+    },
+    {
+      "name": "St. Patrick's Day",
+      "date": "March 17",
+      "type": "Observance",
+    },
+    {
+      "name": "Easter Sunday",
+      "date": "Variable (March/April)",
+      "type": "Religious",
+    },
+    {
+      "name": "Mother's Day",
+      "date": "Second Sunday of May",
+      "type": "Observance",
+    },
+    {
+      "name": "Father's Day",
+      "date": "Third Sunday of June",
+      "type": "Observance",
+    },
+    {
+      "name": "Halloween",
+      "date": "October 31",
+      "type": "Observance",
+    },
+    {
+      "name": "Black Friday",
+      "date": "Day after Thanksgiving",
+      "type": "Shopping",
+    },
+    {
+      "name": "Cyber Monday",
+      "date": "Monday after Thanksgiving",
+      "type": "Shopping",
+    },
+    {
+      "name": "Christmas Eve",
+      "date": "December 24",
+      "type": "Observance",
+    },
+    {
+      "name": "New Year's Eve",
+      "date": "December 31",
+      "type": "Observance",
+    }
+  ]
+}
