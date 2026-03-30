@@ -11,5 +11,6 @@ $(".holiday-card").each(function() {
 
     $(this).highlightHoliday({
         borderColor: highlightColor
+        
     });
 });
