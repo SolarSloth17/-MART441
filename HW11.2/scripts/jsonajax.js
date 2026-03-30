@@ -1,12 +1,23 @@
+(function($) {
+    $.fn.celebrate = function(options) {
+        let settings = $.extend({ color: "#007bff" }, options);
+        return this.each(function() {
+            $(this).css("border-top-color", settings.color);
+
+            $(this).on("mouseenter", function() {
+                $(this).css("transform", "scale(1.02)");
+            }).on("mouseleave", function() {
+                $(this).css("transform", "scale(1)");
+            });
+        });
+    };
+}(jQuery));
+
 $(document).ready(function () {
     $("button").click(function () {
-        // 1. Use getJSON instead of .load for structured data
         $.getJSON("data/holidays.json", function(data) { 
-            
-            // 2. Initialize an empty string to hold your HTML
             let htmlContent = ""; 
 
-            // 3. Use 'data.holidays' (matching the key in your JSON file)
             $.each(data.holidays, function (index, holiday) {
                 htmlContent += "<div class='holiday-card'>";
                 htmlContent += "<h3>" + holiday.name + "</h3>";
@@ -15,11 +26,20 @@ $(document).ready(function () {
                 htmlContent += "</div>";
             });
 
-            // 4. Update the DOM once AFTER the loop finishes
             $("#holidayInformation").hide().html(htmlContent).fadeIn(1000);
 
-            // 5. Call your custom plugin here (Requirement #6)
-            // $(".holiday-card").myCustomPlugin(); 
+            $(".holiday-card").each(function() {
+                let type = $(this).find(".tag").text().trim();
+                let highlightColor = "#007bff"; 
+
+                if (type === "Federal") highlightColor = "#e63946"; 
+                if (type === "Shopping") highlightColor = "#4cc9f0"; 
+                if (type === "Religious") highlightColor = "#fee440"; 
+
+                $(this).celebrate({
+                    color: highlightColor
+                });
+            });
 
         }).fail(function() {
             console.log("Error: Could not load JSON. Check your file path or Live Server.");
