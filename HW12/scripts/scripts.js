@@ -23,9 +23,10 @@ function createSquares() {
 
 // this function will randomly move the second square around the canvas
 function moveGreenSquare() {
-
-    square2.setX(Math.floor(Math.random() * canvas.width));
-    square2.setY(Math.floor(Math.random() * canvas.height));
+    // Random X between 0 and (Canvas Width - Square Width)
+    square2.setX(Math.floor(Math.random() * (canvas.width - square2.theWidth)));
+    // Random Y between 0 and (Canvas Height - Square Height)
+    square2.setY(Math.floor(Math.random() * (canvas.height - square2.theHeight)));
     drawSquare();
 }
 
@@ -83,18 +84,40 @@ function moveUp() {
 }
 
 // add to the y to move down
+function moveUp() {
+    var newY = square1.theY - 10;
+    if (newY < 0) {
+        newY = 0; // Stop at top border
+    }
+    square1.setY(newY);
+}
+
+// Add to the y to move down
 function moveDown() {
-    square1.setY(square1.theY + 10);
+    var newY = square1.theY + 10;
+    // Check against canvas height minus square height
+    if (newY + square1.theHeight > canvas.height) {
+        newY = canvas.height - square1.theHeight; // Stop at bottom border
+    }
+    square1.setY(newY);
 }
 
-// subtract from the x to move to the left
+// Subtract from the x to move to the left
 function moveLeft() {
-    square1.setX(square1.theX - 10);
+    var newX = square1.theX - 10;
+    if (newX < 0) {
+        newX = 0; // Stop at left border
+    }
+    square1.setX(newX);
 }
 
-// add to the x to move to the right
+// Add to the x to move to the right
 function moveRight() {
-    square1.setX(square1.theX + 10);
+    var newX = square1.theX + 10;
+    if (newX + square1.theWidth > canvas.width) {
+        newX = canvas.width - square1.theWidth; // Stop at right border
+    }
+    square1.setX(newX);
 }
 
 // this is a basic collision function that checks for corners overlapping
@@ -106,3 +129,37 @@ function hasCollided(object1, object2) {
         (object1.x > (object2.x + object2.width))
     );
 }
+
+function update() {
+    // 1. Move the square based on current speed
+    player.x += player.dx;
+    player.y += player.dy;
+
+    // 2. Check Horizontal Boundaries (Left & Right)
+    if (player.x < 0) {
+        player.x = 0; // Snap to left wall
+    } else if (player.x + player.width > canvas.width) {
+        player.x = canvas.width - player.width; // Snap to right wall
+    }
+
+    // 3. Check Vertical Boundaries (Top & Bottom)
+    if (player.y < 0) {
+        player.y = 0; // Snap to top wall
+    } else if (player.y + player.height > canvas.height) {
+        player.y = canvas.height - player.height; // Snap to bottom wall
+    }
+}
+
+var audio = document.getElementById("myAudio");
+var btnPlay = document.getElementById("btnPlay");
+
+btnPlay.addEventListener("click", function() {
+    // Check if the audio is paused, then play it
+    if (audio.paused) {
+        audio.play();
+        btnPlay.innerHTML = "Pause Music";
+    } else {
+        audio.pause();
+        btnPlay.innerHTML = "Play Music";
+    }
+});
