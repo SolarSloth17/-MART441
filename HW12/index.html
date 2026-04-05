@@ -4,15 +4,22 @@
     <title>Canvas</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/squareclass.js"></script>
+    <script src="scripts/squareclass.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 
 <body>
     <canvas id="myCanvas" height="600" width="800"></canvas>
 
-    <script src="js/main.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <div id="audio-controls">
+    <audio id="myAudio" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="btnPlay">Play Music</button>
+</div>
 </body>
 
 </html>
