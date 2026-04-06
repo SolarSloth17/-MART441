@@ -2,5 +2,23 @@
   border: black;
   border-style: solid;
   border-width: 15px;
-  background-color: beige;
+  background-color: #8cabf3;
+}
+#audio-controls {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#btnPlay {
+    padding: 10px 20px;
+    background-color: hsl(238, 61%, 41%); /* Green */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+#btnPlay:hover {
+    background-color: hsl(214, 90%, 55%);
 }
