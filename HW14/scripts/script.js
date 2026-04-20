@@ -156,7 +156,8 @@ if (cursors.left.isDown) {
         player.anims.play('turn');
     }
 
-    if ((this.spacebar.isDown || cursors.up.isDown) && player.body.touching.down) {
-        player.setVelocityY(-480);
+if (this.spacebar.isDown && player.body.touching.down) {
+    player.setVelocityY(-480); 
+}
     }
 }
