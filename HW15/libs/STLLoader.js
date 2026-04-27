@@ -1,54 +1,3 @@
-/**
- * Description: A THREE loader for STL ASCII files, as created by Solidworks and other CAD programs.
- *
- * Supports both binary and ASCII encoded files, with automatic detection of type.
- *
- * The loader returns a non-indexed buffer geometry.
- *
- * Limitations:
- *  Binary decoding supports "Magics" color format (http://en.wikipedia.org/wiki/STL_(file_format)#Color_in_binary_STL).
- *  There is perhaps some question as to how valid it is to always assume little-endian-ness.
- *  ASCII decoding assumes file is UTF-8.
- *
- * Usage:
- *  var loader = new THREE.STLLoader();
- *  loader.load( './models/stl/slotted_disk.stl', function ( geometry ) {
- *    scene.add( new THREE.Mesh( geometry ) );
- *  });
- *
- * For binary STLs geometry might contain colors for vertices. To use it:
- *  // use the same code to load STL as above
- *  if (geometry.hasColors) {
- *    material = new THREE.MeshPhongMaterial({ opacity: geometry.alpha, vertexColors: true });
- *  } else { .... }
- *  var mesh = new THREE.Mesh( geometry, material );
- *
- * For ASCII STLs containing multiple solids, each solid is assigned to a different group.
- * Groups can be used to assign a different color by defining an array of materials with the same length of
- * geometry.groups and passing it to the Mesh constructor:
- *
- * var mesh = new THREE.Mesh( geometry, material );
- *
- * For example:
- *
- *  var materials = [];
- *  var nGeometryGroups = geometry.groups.length;
- *
- *  var colorMap = ...; // Some logic to index colors.
- *
- *  for (var i = 0; i < nGeometryGroups; i++) {
- *
- *		var material = new THREE.MeshPhongMaterial({
- *			color: colorMap[i],
- *			wireframe: false
- *		});
- *
- *  }
- *
- *  materials.push(material);
- *  var mesh = new THREE.Mesh(geometry, materials);
- */
-
 
 THREE.STLLoader = function ( manager ) {
 
@@ -112,27 +61,16 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 			}
 
-			// An ASCII STL data must begin with 'solid ' as the first six bytes.
-			// However, ASCII STLs lacking the SPACE after the 'd' are known to be
-			// plentiful.  So, check the first 5 bytes for 'solid'.
-
-			// Several encodings, such as UTF-8, precede the text with up to 5 bytes:
-			// https://en.wikipedia.org/wiki/Byte_order_mark#Byte_order_marks_by_encoding
-			// Search for "solid" to start anywhere after those prefixes.
-
-			// US-ASCII ordinal values for 's', 'o', 'l', 'i', 'd'
 
 			var solid = [ 115, 111, 108, 105, 100 ];
 
 			for ( var off = 0; off < 5; off ++ ) {
 
-				// If "solid" text is matched to the current offset, declare it to be an ASCII STL.
 
 				if ( matchDataViewAt( solid, reader, off ) ) return false;
 
 			}
 
-			// Couldn't find "solid" text at the beginning; it is binary STL.
 
 			return true;
 
@@ -140,7 +78,6 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 		function matchDataViewAt( query, reader, offset ) {
 
-			// Check if each byte in query matches the corresponding byte from the current offset
 
 			for ( var i = 0, il = query.length; i < il; i ++ ) {
 
@@ -160,14 +97,12 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 			var r, g, b, hasColors = false, colors;
 			var defaultR, defaultG, defaultB, alpha;
 
-			// process STL header
-			// check for default color in header ("COLOR=rgba" sequence).
 
 			for ( var index = 0; index < 80 - 10; index ++ ) {
 
-				if ( ( reader.getUint32( index, false ) == 0x434F4C4F /*COLO*/ ) &&
-					( reader.getUint8( index + 4 ) == 0x52 /*'R'*/ ) &&
-					( reader.getUint8( index + 5 ) == 0x3D /*'='*/ ) ) {
+				if ( ( reader.getUint32( index, false ) == 0x434F4C4F  ) &&
+					( reader.getUint8( index + 4 ) == 0x52  ) &&
+					( reader.getUint8( index + 5 ) == 0x3D  ) ) {
 
 					hasColors = true;
 					colors = new Float32Array( faces * 3 * 3 );
@@ -311,7 +246,6 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					}
 
-					// every face have to own ONE valid normal
 
 					if ( normalCountPerFace !== 1 ) {
 
@@ -319,7 +253,6 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 					}
 
-					// each face have to own THREE valid vertices
 
 					if ( vertexCountPerFace !== 3 ) {
 
@@ -379,7 +312,6 @@ THREE.STLLoader.prototype = Object.assign( Object.create( THREE.Loader.prototype
 
 		}
 
-		// start
 
 		var binData = ensureBinary( data );
 
